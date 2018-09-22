@@ -1,9 +1,9 @@
-import Page from '../components/Page'
-import Section from '../components/Section'
+import Page from '../components/page'
+import Section from '../components/section'
 import UploadFile from '../components/UploadFile'
 import UploadFileList from '../components/UploadFileList'
 import UploadBlob from '../components/UploadBlob'
-import Uploads from '../components/Uploads'
+import Uploads from '../components/uploads'
 
 const IndexPage = () => (
   <Page title="Apollo upload examples">

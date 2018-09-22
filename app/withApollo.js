@@ -8,12 +8,15 @@ import { getDataFromTree } from 'react-apollo'
 import getDisplayName from 'react-display-name'
 
 let apolloClient
+const API_URI = process.env.API_URI || 'http://localhost:3001/graphql'
+
+console.log('process.env.API_URI:---> ', API_URI)
 
 const createApolloClient = (cache = {}) =>
   new ApolloClient({
     ssrMode: typeof window !== 'undefined',
     cache: new InMemoryCache().restore(cache),
-    link: createUploadLink({ uri: process.env.API_URI })
+    link: createUploadLink({ uri: API_URI })
   })
 
 export default App =>

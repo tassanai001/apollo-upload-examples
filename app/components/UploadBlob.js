@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 import uploadsQuery from '../queries/uploads'
-import Field from './Field'
+import Field from './field'
 
 class UploadBlob extends Component {
   state = {
